@@ -13,6 +13,8 @@
 		6F65663929C2B74D00717039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F65663729C2B74D00717039 /* Main.storyboard */; };
 		6F65663B29C2B75000717039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F65663A29C2B75000717039 /* Assets.xcassets */; };
 		6F65663E29C2B75000717039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F65663C29C2B75000717039 /* LaunchScreen.storyboard */; };
+		6F65664629C2B79000717039 /* GradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F65664529C2B79000717039 /* GradientLabel.swift */; };
+		6F65664929C2B8D800717039 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6F65664829C2B8D800717039 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		6F65663A29C2B75000717039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F65663D29C2B75000717039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F65663F29C2B75000717039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F65664529C2B79000717039 /* GradientLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F65664929C2B8D800717039 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				6F65663129C2B74D00717039 /* AppDelegate.swift */,
 				6F65663329C2B74D00717039 /* SceneDelegate.swift */,
 				6F65663529C2B74D00717039 /* ViewController.swift */,
+				6F65664529C2B79000717039 /* GradientLabel.swift */,
 				6F65663729C2B74D00717039 /* Main.storyboard */,
 				6F65663A29C2B75000717039 /* Assets.xcassets */,
 				6F65663C29C2B75000717039 /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = demo;
+			packageProductDependencies = (
+				6F65664829C2B8D800717039 /* SnapKit */,
+			);
 			productName = demo;
 			productReference = 6F65662E29C2B74D00717039 /* demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 6F65662529C2B74D00717039;
+			packageReferences = (
+				6F65664729C2B8D800717039 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 6F65662F29C2B74D00717039 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F65664629C2B79000717039 /* GradientLabel.swift in Sources */,
 				6F65663629C2B74D00717039 /* ViewController.swift in Sources */,
 				6F65663229C2B74D00717039 /* AppDelegate.swift in Sources */,
 				6F65663429C2B74D00717039 /* SceneDelegate.swift in Sources */,
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F65664729C2B8D800717039 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F65664829C2B8D800717039 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F65664729C2B8D800717039 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F65662629C2B74D00717039 /* Project object */;
 }
